@@ -17,20 +17,20 @@ function drawFace(ctx, radius) {
 
     ctx.beginPath();
     ctx.arc(0, 0, radius, 0, 2*Math.PI);
-    ctx.fillStyle = 'white';
+    ctx.fillStyle = 'pink';
     ctx.fill();
 
     grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
-    grad.addColorStop(0, 'lightyellow');
+    grad.addColorStop(0, 'lightblue');
     grad.addColorStop(0.5, 'lightyellow');
-    grad.addColorStop(1, 'pink');
+    grad.addColorStop(1, 'lightblue');
     ctx.strokeStyle = grad;
     ctx.lineWidth = radius*0.1;
     ctx.stroke();
 
     ctx.beginPath();
     ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
-    ctx.fillStyle = 'pink';
+    ctx.fillStyle = "lightyellow"
     ctx.fill();
 }
 
